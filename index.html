@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArtPlay Studio</title>
+
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwsome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90">
+    <!-- NAVBAR -->
+    <nav id="mainNav" class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          ArtPlay<span class="dot"></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categories">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+
+      <div class="container position-relative" style="z-index: 2">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-badge">Art that makes you smile</div>
+            <h1 class="hero-title">
+              Create. Play.<br />
+              <span>Get Inspired.</span>
+            </h1>
+            <p class="hero-text">
+              A colorful playground of artworks, ideas, and creative energy.
+              Dive into bold colors, weird shapes, and pure imagination.
+              <span class="text-danger fw-bold">NOTHING CAN STOP YOU</span>
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#gallery" class="btn btn-fun">Explore Gallery</a>
+              <a href="#categories" class="btn btn-fun-outline"
+                >See Categories</a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-6 hero-art">
+            <div class="floating-card">
+              <img
+                src="https://ik.imagekit.io/theartling/prod/tr:w-1650/products/Product/065d0e64a3514880bf2398126d0bcdca_sw-3815_sh-2501.jpg"
+                alt="Featured Art"
+              />
+            </div>
+            <div class="floating-card floating-card-2">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tF-Pl4CWbpEBbAFDMx5cdDH8QT1oHQUa-2NL0rX8Kg&s=10"
+                alt="Featured Art 2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL SECTION -->
+    <section class="py-5" style="background: #fff">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="section-label">Featured Picks</span>
+          <h2 class="section-title">Swipe the Good Stuff</h2>
+        </div>
+
+        <div id="funCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#funCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#funCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#funCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner rounded-4 overflow-hidden shadow">
+            <div class="carousel-item active">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9O2IeK-XglATLLh44I1lFopfvs0cXzQZ9YH6zYEHP8-fWsM-EXkeYWo&s=10"
+                class="d-block w-100"
+                alt="Golden Vibes"
+              />
+              <div class="carousel-caption">
+                <h5>Golden Vibes</h5>
+                <p>Warm tones that feel like a hug</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.saatchiart.com/saatchi/1130050/art/5339083/4408897-WGBDVIQV-7.jpg"
+                class="d-block w-100"
+                alt="Color Blast"
+              />
+              <div class="carousel-caption">
+                <h5>Color Blast</h5>
+                <p>When the paint decides to party</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://d7hftxdivxxvm.cloudfront.net/?quality=85&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F4H3LTd4LmmoXIhb4HiW1mg%252F1991.173_web.jpg&width=910"
+                class="d-block w-100"
+                alt="Dream Mode"
+              />
+              <div class="carousel-caption">
+                <h5>Dream Mode</h5>
+                <p>Soft, surreal, and a little magical</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#funCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#funCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTIION -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label">The Collection</span>
+          <h2 class="section-title">
+            12 <span class="text-danger">Pieces</span> of Pure Fun
+          </h2>
+          <p class="section-sub">Click any card to open a bigger view.</p>
+        </div>
+
+        <!-- Grid: Gallery -->
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Crimson Party"
+              data-desc="A vibrant, geometrically fractured still life where explosive red roses and a grounded apple emerge from a mosaic of intense scarlet and dark tones, balancing raw passion with structured modernity."
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PX9LcmhDbmV5XnweqJ7Ne_97lzRerKFrEnDipnB5lDXcWLfZDQOWy_U&s=10"
+            >
+              <span class="tag tag-coral">Abstract</span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6PX9LcmhDbmV5XnweqJ7Ne_97lzRerKFrEnDipnB5lDXcWLfZDQOWy_U&s=10"
+                alt="Crimson Party"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Crimson Party</h5>
+                <p class="card-text">Reds that refuse to sit still.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Ocean Daydream"
+              data-desc="A resin seascape captures swirling, icy white foam crashing over starfish, shells, and dark pebbles set against a deep sapphire ocean, blending natural ocean elements with fluid abstraction."
+              data-img="https://hawaiifluidart.com/wp-content/uploads/2025/09/image-2-768x489.jpg"
+            >
+              <span class="tag tag-teal">Fluid</span>
+              <img
+                src="https://hawaiifluidart.com/wp-content/uploads/2025/09/image-2-768x489.jpg"
+                alt="Ocean Daydream"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ocean Daydream</h5>
+                <p class="card-text">Blue vibes for slow days.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Sunny Side Up"
+              data-desc="An impressionistic painting of a tree with vibrant autumn leaves standing on a sunlit, grassy hill against a soft green backdrop."
+              data-img="https://thumbs.dreamstime.com/b/original-oil-painting-canvas-autumn-tree-sunny-mountain-side-landscape-original-oil-painting-canvas-autumn-tree-sunny-140458364.jpg"
+            >
+              <span
+                class="tag tag-sunny"
+                style="background: #ffe66d; color: #2d2a32"
+                >Warm</span
+              >
+              <img
+                src="https://thumbs.dreamstime.com/b/original-oil-painting-canvas-autumn-tree-sunny-mountain-side-landscape-original-oil-painting-canvas-autumn-tree-sunny-140458364.jpg"
+                alt="Sunny Side Up"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sunny Side Up</h5>
+                <p class="card-text">Golden hour in canvas form.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="City Lines"
+              data-desc="A rain-soaked city street glows at night as tall buildings and flickering streetlights melt into textured, abstract reflections of gold, turquoise, and shadow."
+              data-img="https://www.carredartistes.com/products_images/prod_317855/d_13-x-13-cm-carre-d-artistes-f1--defaut-230597-0.jpg"
+            >
+              <span class="tag tag-purple">Modern</span>
+              <img
+                src="https://www.carredartistes.com/products_images/prod_317855/d_13-x-13-cm-carre-d-artistes-f1--defaut-230597-0.jpg"
+                alt="City Lines"
+              />
+              <div class="card-body">
+                <h5 class="card-title">City Lines</h5>
+                <p class="card-text">Architecture but make it art.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Petal Soft"
+              data-desc="An elegant cascade of lush, multi-colored peonies captured in timeless botanical style."
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5jf6J1qNhBVlOFsHlcFzdm24ijbHajf7-IakJ6n8E4XoLl-_Q5zCdonw&s=10"
+            >
+              <span class="tag tag-coral">Botanical</span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5jf6J1qNhBVlOFsHlcFzdm24ijbHajf7-IakJ6n8E4XoLl-_Q5zCdonw&s=10"
+                alt="Petal Soft"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Petal Soft</h5>
+                <p class="card-text">Flowers that don’t need water.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Neon Night"
+              data-desc="A stylized, neon-lit cityscape pulsating with midnight blues and streaming traffic lights across wet streets.."
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq0QOWDpOzrwZeoVEPSef-wrgTXe5TfOG1snXFrKXX1fP2IGjZt95Itw&s=10"
+            >
+              <span class="tag tag-purple">Vibrant</span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq0QOWDpOzrwZeoVEPSef-wrgTXe5TfOG1snXFrKXX1fP2IGjZt95Itw&s=10"
+                alt="Neon Night"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Neon Night</h5>
+                <p class="card-text">Colors that glow after dark.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Quiet Texture"
+              data-desc="A relief of sculptured sands and dark ridgelines, drifting like windblown dunes frozen in gold and charcoal."
+              data-img="https://media.artsper.com/artwork/2319473_4_m.jpg"
+            >
+              <span class="tag tag-teal">Minimal</span>
+              <img
+                src="https://media.artsper.com/artwork/2319473_4_m.jpg"
+                alt="Quiet Texture"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Quiet Texture</h5>
+                <p class="card-text">Silence never looked this good.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Cloud Parade"
+              data-desc="Two figures watch as dusk-lit clouds take flight, transforming into a massive hot air balloon over quiet mountains."
+              data-img="https://www.vexels.com/blog/wp-content/uploads/2013/08/8544735354_452da43f4e_b.jpg"
+            >
+              <span class="tag tag-coral">Surreal</span>
+              <img
+                src="https://www.vexels.com/blog/wp-content/uploads/2013/08/8544735354_452da43f4e_b.jpg"
+                alt="Cloud Parade"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Cloud Parade</h5>
+                <p class="card-text">Dreams with better lighting.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Earth Hugs"
+              data-desc="Warm earthy tones and organic shapes. Grounding, cozy, and a little wild."
+              data-img="https://mandalaorganicarts.com.au/wp-content/uploads/2022/09/front.jpg"
+            >
+              <span
+                class="tag tag-sunny"
+                style="background: #ffe66d; color: #2d2a32"
+                >Organic</span
+              >
+              <img
+                src="https://mandalaorganicarts.com.au/wp-content/uploads/2022/09/front.jpg"
+                alt="Earth Hugs"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Earth Hugs</h5>
+                <p class="card-text">Nature’s favorite color palette.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Electric Kiss"
+              data-desc="An intimate embrace rendered in striking electric yellow and deep teal strokes."
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhokhQcHYS3UioOmcMe4ZcRNqVnbOblS_0vhH4Egq4QQG9H_sBRzEbvA&s=10"
+            >
+              <span class="tag tag-purple">Neon</span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhokhQcHYS3UioOmcMe4ZcRNqVnbOblS_0vhH4Egq4QQG9H_sBRzEbvA&s=10"
+                alt="Electric Kiss"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Electric Kiss</h5>
+                <p class="card-text">Glow-up in visual form.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Ink Dance"
+              data-desc="Spontaneous ink flows that look like they have their own rhythm. Controlled chaos at its best."
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK66B7cEv7PQ0Y0AJ40puqOwOjlSu1QMrIqDV5Upv9qg&s=10"
+            >
+              <span class="tag tag-teal">Ink</span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK66B7cEv7PQ0Y0AJ40puqOwOjlSu1QMrIqDV5Upv9qg&s=10"
+                alt="Ink Dance"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ink Dance</h5>
+                <p class="card-text">When the pen leads the way.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div
+              class="gallery-card"
+              data-bs-toggle="modal"
+              data-bs-target="#artModal"
+              data-title="Pastel Horizon"
+              data-desc="Soft gradients that feel like a deep breath. Ideal background energy for focused or dreamy moments."
+              data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyUU5KOiu0xEIgaEws80IfB0BHzwKuz4s7I-YimvMtxZ_e9mp-oJpkAPp&s=10"
+            >
+              <span class="tag tag-coral">Pastel</span>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyUU5KOiu0xEIgaEws80IfB0BHzwKuz4s7I-YimvMtxZ_e9mp-oJpkAPp&s=10"
+                alt="Pastel Horizon"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pastel Horizon</h5>
+                <p class="card-text">Soft skies, softer thoughts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES SECTION -->
+    <section id="categories" style="background: var(--cream)">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label">Browse by what you feel</span>
+          <h2 class="section-title">Pick Your Flavor</h2>
+          <p class="section-sub">
+            Different vibes for different days. No wrong choices here.
+          </p>
+        </div>
+
+        <!-- Grid: equal columns -->
+        <div class="row g-4 mb-4">
+          <div class="col-12 col-md-4">
+            <div class="cat-card">
+              <div class="cat-icon" style="background: var(--coral)">
+                <i class="bi bi-brush"></i>
+              </div>
+              <h5>Abstract Play</h5>
+              <p>Shapes, colors, and pure feeling. No rules, just vibes.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="cat-card">
+              <div class="cat-icon" style="background: var(--teal)">
+                <i class="bi bi-stars"></i>
+              </div>
+              <h5>Dreamy & Soft</h5>
+              <p>Pastels, clouds, and gentle energy for slower days.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="cat-card">
+              <div class="cat-icon" style="background: var(--purple)">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <h5>Bold & Loud</h5>
+              <p>Neon, contrast, and maximum personality.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid: mini cards -->
+        <div class="row g-3">
+          <div class="col-6 col-md-3">
+            <div class="mini-cat">
+              <i class="bi bi-flower1" style="color: var(--coral)"></i>
+              <span>Botanical</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mini-cat">
+              <i class="bi bi-circle-half" style="color: var(--teal)"></i>
+              <span>Minimal</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mini-cat">
+              <i class="bi bi-cloud-moon" style="color: var(--purple)"></i>
+              <span>Surreal</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mini-cat">
+              <i class="bi bi-pencil" style="color: #e6a817"></i>
+              <span>Ink & Line</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <!-- Grid: 50/50 -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <div class="about-img-wrap">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDTxvPtVypa5gq0meuw_-EWZrj1OxPcSKP1kpTCLLDelvDebYJtgCthk&s=10"
+                class="about-img"
+                alt="Creative mess"
+              />
+              <div class="about-sticker">Made with ❤️</div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <span class="section-label">The Story</span>
+            <h2 class="section-title mb-3">Why ArtPlay Exists</h2>
+            <p class="text-muted mb-3" style="font-weight: 500">
+              <span class="text-danger fw-bold">Short & Punchy</span><br />Skip
+              the museum whispers. ArtPlay feels like stepping into a creative
+              friend’s studio—vibrant, effortless, and wonderfully chaotic.
+              Whether you’re collecting ideas or scrolling for raw inspiration,
+              we’re here to make art feel fun again.
+            </p>
+            <p class="text-muted mb-4" style="font-weight: 500">
+              <span class="text-danger fw-bold">Witty & High-End</span
+              ><br />Traditional galleries take themselves far too seriously.
+              ArtPlay is the studio lounge where great taste meets zero
+              pretension—a space for inspiration seekers, casual scrollers, and
+              collectors with personality.
+            </p>
+            <p class="text-muted mb-5" style="font-weight: 500">
+              <span class="text-danger fw-bold">Bold & Conversational</span
+              ><br />Ditch the sterile white walls. ArtPlay brings you the
+              energy of a living, breathing artist studio—colorful, welcoming,
+              and brilliantly chaotic. No dress code, no art-world snobbery,
+              just pure creative dopamine.
+            </p>
+
+            <div class="accordion" id="aboutAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                  >
+                    Our playful mission
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    Make discovering art feel light, joyful, and free of
+                    pressure. Good design + good vibes = happy creatives.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                  >
+                    How we pick the art
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#aboutAccordion"
+                >
+                  <div class="accordion-body">
+                    We look for pieces that spark curiosity, emotion, or a
+                    little smile. Technical skill is great — personality is
+                    better.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label">Say Hello!!</span>
+          <h2 class="section-title">Let’s Make Something Cool</h2>
+          <p class="section-sub">
+            Questions, collabs, or just want to share your favorite color? Drop
+            a message.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-lg-7">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="David Creative"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="you@email.com"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label"
+                    >What’s this about?</label
+                  >
+                  <select class="form-select" id="subject">
+                    <option selected>Just saying hi!</option>
+                    <option>Collaboration idea</option>
+                    <option>Feedback on the site</option>
+                    <option>Something else fun</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    placeholder="Tell us what’s on your mind..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-fun">Send it!</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12 col-lg-4">
+            <div class="contact-info-box">
+              <h5>Find us here</h5>
+              <p>
+                <i class="fa-solid fa-location-dot fa-bounce"></i></i> Mamatid, Cabuyao, Laguna
+                🇵🇭
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope fa-jello"></i></i> hello@artplay.studio
+              </p>
+              <p><i class="fa-solid fa-clock fa-spin-snap-8"></i></i> Always open for ideas
+              </p>
+
+              <hr class="border-light opacity-25 my-4" />
+
+              <p class="mb-3 fw-bold">Hang out with us</p>
+              <div>
+                <a href="#" class="social-btn"
+                  ><i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="#" class="social-btn">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="#" class="social-btn"
+                  ><i class="fa-brands fa-pinterest"></i></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <h5 class="brand-font mb-3">
+              ArtPlay<span style="color: var(--coral)">.</span>
+            </h5>
+            <p class="small" style="opacity: 0.8">
+              A fun, colorful art & creativity showcase that represents the skills or each individuals.
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h6 class="mb-3">Jump to</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#home">Home</a></li>
+              <li class="mb-2"><a href="#gallery">Gallery</a></li>
+              <li class="mb-2"><a href="#categories">Categories</a></li>
+              <li class="mb-2"><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <h6 class="mb-3">Bootstrap goodies used</h6>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge-fun">Navbar</span>
+              <span class="badge-fun">Carousel</span>
+              <span class="badge-fun">Cards</span>
+              <span class="badge-fun">Modal</span>
+              <span class="badge-fun">Accordion</span>
+              <span class="badge-fun">Forms</span>
+              <span class="badge-fun">Grid</span>
+              <span class="badge-fun">Buttons</span>
+              <span class="badge-fun">Badges</span>
+              <span class="badge-fun">Icons</span>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 border-secondary opacity-25" />
+        <div class="text-center small" style="opacity: 0.7">
+          © 2026 ArtPlay Studio · University of Cabuyao
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div
+      class="modal fade"
+      id="artModal"
+      tabindex="-1"
+      aria-labelledby="artModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="artModalLabel">Artwork</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center p-4">
+            <img
+              id="modalImage"
+              src=""
+              class="img-fluid rounded-4 mb-3 shadow-sm"
+              alt="Artwork"
+              style="max-height: 420px; object-fit: contain"
+            />
+            <p
+              id="modalDescription"
+              class="text-muted px-2"
+              style="font-weight: 500"
+            ></p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button
+              type="button"
+              class="btn btn-close-fun"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Modal content
+      const artModal = document.getElementById("artModal");
+      artModal.addEventListener("show.bs.modal", function (event) {
+        const card = event.relatedTarget;
+        document.getElementById("artModalLabel").textContent =
+          card.getAttribute("data-title");
+        document.getElementById("modalDescription").textContent =
+          card.getAttribute("data-desc");
+        document.getElementById("modalImage").src =
+          card.getAttribute("data-img");
+        document.getElementById("modalImage").alt =
+          card.getAttribute("data-title");
+      });
+    </script>
+  </body>
+</html>
